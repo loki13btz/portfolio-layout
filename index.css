@@ -1,0 +1,205 @@
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(gilroy-bold.ttf);
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(gilroy-medium.ttf);
+}
+.layout {
+  font-family: Gilroy-Regular, Arial, sans-serif;
+}
+.layout .menu {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 1px solid #828282;
+  color: #828282;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Gilroy-Bold;
+}
+.layout .menu .menu-item {
+  justify-self: center;
+  padding: 32px 0;
+}
+.layout .menu .home {
+  color: black;
+}
+.layout .profile {
+  margin: 0 10%;
+  margin-bottom: 100px;
+}
+.layout .profile .info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 190px;
+}
+.layout .profile .info .name {
+  justify-self: start;
+  font-family: Gilroy-Bold;
+  font-size: 47.3392px;
+  line-height: 59px;
+  color: #070707;
+}
+.layout .profile .info .speciality {
+  justify-self: center;
+  align-self: center;
+  color: #070707;
+}
+.layout .profile .info .language {
+  justify-self: end;
+  align-self: center;
+  font-size: 16px;
+  line-height: 20px;
+  width: auto;
+}
+.layout .profile .info .language .text {
+  display: table;
+  transform: rotate(-90deg);
+  font-family: Gilroy-Bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.layout .profile .info .language .ru {
+  display: table-cell;
+  color: #828282;
+}
+.layout .profile .info .language .eng {
+  display: table-cell;
+}
+.layout .profile .img {
+  background-image: url(img/BSPP2266.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 387px;
+}
+.layout .about-me {
+  margin-top: 107px;
+  width: 100%;
+  height: 506px;
+  text-align: center;
+  background: #f6f6f6;
+}
+.layout .about-me .title {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  padding-top: 120px;
+  padding-bottom: 17px;
+}
+.layout .about-me .info {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+}
+.layout .about-me .info p:not(:last-child) {
+  padding-bottom: 20px;
+}
+.layout .skills {
+  margin: 80px 10%;
+  text-align: center;
+}
+.layout .skills .text {
+  padding-bottom: 90px;
+}
+.layout .skills .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.layout .skills .items .skill {
+  padding: 20px;
+}
+.layout .skills .items .img {
+  padding-bottom: 20px;
+}
+.layout .skills .items .describe {
+  padding-bottom: 40px;
+}
+.layout .skills .items .stars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.layout .skills .items .stars .star {
+  justify-self: center;
+  background: #e5e5e5;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.layout .skills .items .stars .star-active {
+  justify-self: center;
+  background: #070707;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.layout .portfolio {
+  width: 100%;
+  text-align: center;
+  background: #f6f6f6;
+  height: 2253px;
+}
+.layout .portfolio h2 {
+  padding-top: 112px;
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  padding-bottom: 42px;
+}
+.layout .portfolio .project-list .project-item .describe {
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  padding-top: 45px;
+  padding-bottom: 99px;
+}
+.layout .contacts {
+  text-align: center;
+  width: 100%;
+  height: 622px;
+}
+.layout .contacts .title {
+  font-family: Gilroy-Bold;
+  font-size: 34px;
+  line-height: 42px;
+  padding-top: 114px;
+  padding-bottom: 20px;
+}
+.layout .contacts .question {
+  padding-bottom: 29px;
+  font-family: Gilroy-Medium;
+  font-size: 18px;
+  line-height: 22px;
+}
+.layout .contacts button {
+  margin-bottom: 85px;
+  background-color: #070707;
+  color: white;
+  padding: 13px 30px 6px 28px;
+  border-radius: 30px;
+  font-family: Gilroy-Bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.layout .contacts .links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 256px;
+  align-content: center;
+  padding-bottom: 45px;
+  margin: 0 auto;
+}
+.layout .contacts .link {
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
